@@ -1,0 +1,378 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    /*никто не может скопировать сайт*/
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+
+    width: 100%;
+    /*самый правильный вариант для задачи размеров страницы*/
+    height: 3000px;
+
+
+}
+
+header {
+
+    display: flex;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #ACB78E;
+}
+
+#header_inner {
+
+    display: flex;
+    margin-left: 300px;
+}
+
+
+#header_inner>#name {
+
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: x-large;
+    color: #ffffff;
+}
+
+#fon_1 {
+
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    background-color: rgb(225, 241, 194);
+
+}
+
+.image_1 img {
+
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -675px;
+    margin-right: 50px;
+    height: 600px;
+    width: 450px;
+    object-fit: cover;
+    /*убирает лишнее на картинке по заданным размерам*/
+    border-radius: 30px;
+    /*округление*/
+    box-shadow: 0 0 5px 10px #53645a8a;
+    /*тень, !!! УЗНАТЬ ЧТО ОЗНАЧАЮТ 0-И  !!! */
+    pointer-events: none;
+    /*убирает водяные знаки от яндекса, сохранить фото, найти фото*/
+    z-index: 1;
+
+}
+.image_0 img {
+
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 400px;
+    margin-right: 50px;
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+    opacity: 0.4;
+    filter: hue-rotate(40deg);
+    /*убирает лишнее на картинке по заданным размерам*/
+    border-radius: 30px;
+    /*округление*/
+    box-shadow:  6px 6px 6px 6px #1f1f1f;
+    /*тень, !!! УЗНАТЬ ЧТО ОЗНАЧАЮТ 0-И  !!! */
+    pointer-events: none;
+    /*убирает водяные знаки от яндекса, сохранить фото, найти фото*/
+    z-index: 3;
+
+
+
+}
+
+#txt {
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    height: 230px;
+    width: 600px;
+    padding: 15px;
+    font-size: +20px;
+    background-color: rgba(116, 140, 117, 0.508);
+    border-radius: 10px;
+    z-index: 2;
+
+
+}
+
+.button {
+
+    margin-top: 75px;
+}
+
+.button button {
+
+    padding: 10px 30px;
+    outline: none;
+    /*?*/
+    border: none;
+    /*?*/
+    border-radius: 10px;
+    cursor: pointer;
+    /*?*/
+    /*узнать больше про кнопки (? - означает что не понятно)*/
+    color: #ffffff;
+    background-color: rgb(57, 76, 26);
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    /*?*/
+    box-shadow: 0px 5px 10px rgb(57, 76, 26);
+}
+
+.image_2 img {
+
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-right: 50px;
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 30px;
+    opacity: 0.6;
+    box-shadow: 0 0 4px 10px #1f1f1f;
+    pointer-events: none;
+    z-index: 4;
+}
+
+#fon_2 {
+
+    height: 700px;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.image_section img {
+
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    right: 0%;
+    object-fit: cover;
+    opacity: 0.3;
+    z-index: 2;
+    pointer-events: none;
+
+}
+
+.txt2 p {
+
+    margin-top: 225px;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+#fon_3 {
+
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ACB78E;
+
+}
+
+.txt_3 p {
+
+    display: flex;
+    width: 750px;
+    height: 400px;
+    padding: 10px;
+    margin-top: 150px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    font-size: 22px;
+
+}
+
+.txt_3 p::first-letter {
+
+    color: #ACB78E;
+}
+
+.image_3 img {
+
+    margin-top: 75px;
+    margin-left: 200px;
+    height: 550px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 10px #1f1f1f;
+    pointer-events: none;
+
+}
+
+#fon_4 {
+
+    height: 700px;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.image_section_2 img {
+
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    right: 0%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.4;
+    z-index: 2;
+    pointer-events: none;
+
+}
+
+.txt_4 p {
+
+    margin-top: 200px;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+#fon_5 {
+
+    height: 700px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-color: #8d9a6c;
+
+}
+
+.txt_5 p {
+
+    display: flex;
+    text-align: center;
+    width: 750px;
+    height: 400px;
+    padding: 20px;
+    margin-top: 150px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    font-size: 22px;
+
+}
+
+.txt_5 p::first-letter {
+
+    color: #ACB78E;
+}
+
+.image_5 img {
+
+    margin-top: 75px;
+    margin-right: 200px;
+    height: 550px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 10px #1f1f1f;
+    pointer-events: none; 
+
+}
+
+#fon_6 {
+
+    height: 800px;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    background-color: black;
+}
+.image_section_4 img {
+
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    right: 0%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.4;
+    z-index: 2;
+    pointer-events: none;
+
+}
+.txt_6 p {
+
+    margin-top: 175px;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.txt_6 p a{
+
+    text-decoration: none;
+    color: #000000;
+    background-color: bisque;
+    border-radius: 5px;
+}
+.button_2 {
+
+    margin-top: 150px;
+    
+}
+.button_2 button {
+
+    padding: 20px 50px;
+    outline: none;
+    /*?*/
+    border: none;
+    /*?*/
+    border-radius: 10px;
+    cursor: pointer;
+    /*?*/
+    /*узнать больше про кнопки (? - означает что не понятно)*/
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    /*?*/
+    box-shadow: 5px 5px 5px 10px rgb(255, 255, 255);
+}
+body::-webkit-scrollbar {
+    width: 10px;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: #acb78e7f;        /* цвет дорожки */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #565c47;;    /* цвет плашки */
+    border-radius: 10px;       /* закругления плашки */
+    border: 3px solid rgb(255, 255, 255);  /* padding вокруг плашки */
+  }
